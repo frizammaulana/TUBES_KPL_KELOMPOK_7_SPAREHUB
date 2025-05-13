@@ -1,0 +1,37 @@
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Main.exe
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Main.deps.json
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Main.runtimeconfig.json
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Main.dll
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Main.pdb
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Searching.dll
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\bin\Debug\net8.0\Searching.pdb
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.csproj.AssemblyReference.cache
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.AssemblyInfoInputs.cache
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.AssemblyInfo.cs
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.csproj.CoreCompileInputs.cache
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.csproj.Up2Date
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.dll
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\refint\Main.dll
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.pdb
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\ref\Main.dll
+C:\Users\bagas\OneDrive\Dokumen\Tugas Telkom\Tugas Semester 4\Konstruksi Perangkat Lunak\Tubes\Tubes\Main\obj\Debug\net8.0\Main.sourcelink.json
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Main.exe
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Main.deps.json
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Main.runtimeconfig.json
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Main.dll
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Main.pdb
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Searching.dll
+C:\Projecttt\Tubes KPL\Main\bin\Debug\net8.0\Searching.pdb
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.csproj.AssemblyReference.cache
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.AssemblyInfoInputs.cache
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.AssemblyInfo.cs
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.csproj.CoreCompileInputs.cache
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.csproj.Up2Date
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.dll
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\refint\Main.dll
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.pdb
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\ref\Main.dll
