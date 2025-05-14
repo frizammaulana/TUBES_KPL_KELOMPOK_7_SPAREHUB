@@ -7,16 +7,69 @@ public class Program
 {
     static void Main()
     {
-        var data = new List<Sparepart>
-        {
-            new Sparepart { Nama = "Oli", Kategori = "Mesin", Merek = "Shell", KompatibelDengan = "Vario", Harga = 60000 },
-            new Sparepart { Nama = "Busi", Kategori = "Kelistrikan", Merek = "Honda", KompatibelDengan = "Beat", Harga = 25000 }
-        };
+        var data = Utility.AmbilDataDummy();
         var mesin = new SearchEngine<Sparepart>(data);
-        var hasil = mesin.CariBerdasarkanKategori("Mesin");
-        foreach (var item in hasil)
+
+        while (true)
         {
-            Console.WriteLine($"{item.Nama} - {item.Merek} - Rp{item.Harga}");
+            Console.Clear();
+            Console.WriteLine("=== Sistem Pencarian Sparepart ===");
+            Console.WriteLine("1. Cari berdasarkan Kategori");
+            Console.WriteLine("2. Cari berdasarkan Merek");
+            Console.WriteLine("3. Cari berdasarkan Kompatibilitas");
+            Console.WriteLine("0. Keluar");
+            Console.Write("Pilihan Anda: ");
+            string pilihan = Console.ReadLine();
+
+            if (pilihan == "0")
+            {
+                Console.WriteLine("Terima kasih!");
+                break;
+            }
+
+            Console.Write("Masukkan kata kunci pencarian: ");
+            string keyword = Console.ReadLine();
+
+            List<Sparepart> hasil = null;
+
+            try
+            {
+                switch (pilihan)
+                {
+                    case "1":
+                        hasil = mesin.CariBerdasarkanKategori(keyword);
+                        break;
+                    case "2":
+                        hasil = mesin.CariBerdasarkanMerek(keyword);
+                        break;
+                    case "3":
+                        hasil = mesin.CariBerdasarkanKompatibilitas(keyword);
+                        break;
+                    default:
+                        Console.WriteLine("Pilihan tidak valid.");
+                        break;
+                }
+
+                if (hasil != null && hasil.Count > 0)
+                {
+                    Console.WriteLine("\nHasil Pencarian:");
+                    foreach (var item in hasil)
+                    {
+                        Console.WriteLine($"{item.Nama} | {item.Kategori} | {item.Merek} | {item.KompatibelDengan} | Rp{item.Harga}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Tidak ada hasil yang ditemukan.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+            }
+
+            Console.WriteLine("\nTekan ENTER untuk melanjutkan...");
+            Console.ReadLine();
         }
     }
 }
