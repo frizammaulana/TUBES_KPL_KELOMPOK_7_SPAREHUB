@@ -23,7 +23,7 @@ namespace TestSearching
         }
 
         [TestMethod]
-        public void CariBerdasarkanKategori_ShouldReturnCorrectItems()
+        public void CariBerdasarkanKategori()
         {
             var engine = new SearchEngine<Sparepart>(dummyData);
             var hasil = engine.CariBerdasarkanKategori("Mesin");
@@ -33,7 +33,7 @@ namespace TestSearching
         }
 
         [TestMethod]
-        public void CariBerdasarkanMerek_ShouldReturnCorrectItems()
+        public void CariBerdasarkanMerek()
         {
             var engine = new SearchEngine<Sparepart>(dummyData);
             var hasil = engine.CariBerdasarkanMerek("Honda");
@@ -42,7 +42,7 @@ namespace TestSearching
         }
 
         [TestMethod]
-        public void CariBerdasarkanKompatibilitas_ShouldReturnCorrectItems()
+        public void CariBerdasarkanKompatibilitas()
         {
             var engine = new SearchEngine<Sparepart>(dummyData);
             var hasil = engine.CariBerdasarkanKompatibilitas("Mio");
