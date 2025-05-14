@@ -21,3 +21,4 @@ C:\Projecttt\Tubes KPL\Searching\obj\Debug\net8.0\Searching.dll
 C:\Projecttt\Tubes KPL\Searching\obj\Debug\net8.0\refint\Searching.dll
 C:\Projecttt\Tubes KPL\Searching\obj\Debug\net8.0\Searching.pdb
 C:\Projecttt\Tubes KPL\Searching\obj\Debug\net8.0\ref\Searching.dll
+C:\Projecttt\Tubes KPL\Searching\obj\Debug\net8.0\Searching.sourcelink.json

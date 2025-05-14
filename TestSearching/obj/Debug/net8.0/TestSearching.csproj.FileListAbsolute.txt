@@ -195,3 +195,4 @@ C:\Projecttt\Tubes KPL\TestSearching\obj\Debug\net8.0\refint\TestSearching.dll
 C:\Projecttt\Tubes KPL\TestSearching\obj\Debug\net8.0\TestSearching.pdb
 C:\Projecttt\Tubes KPL\TestSearching\obj\Debug\net8.0\TestSearching.genruntimeconfig.cache
 C:\Projecttt\Tubes KPL\TestSearching\obj\Debug\net8.0\ref\TestSearching.dll
+C:\Projecttt\Tubes KPL\TestSearching\obj\Debug\net8.0\TestSearching.sourcelink.json

@@ -35,3 +35,4 @@ C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\refint\Main.dll
 C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.pdb
 C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.genruntimeconfig.cache
 C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\ref\Main.dll
+C:\Projecttt\Tubes KPL\Main\obj\Debug\net8.0\Main.sourcelink.json
