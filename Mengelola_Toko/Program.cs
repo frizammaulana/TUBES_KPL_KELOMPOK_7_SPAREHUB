@@ -2,6 +2,7 @@
 using Mengelola_Toko.Services;
 using Mengelola_Toko.Controllers;
 using System.Diagnostics;
+using Mengelola_Toko.Helpers;
 
 
 var controller = new TokoController();
@@ -21,19 +22,29 @@ while (true)
     switch (input)
     {
         case "1":
-            Console.Write("Nama Barang: ");
-            string nama = Console.ReadLine();
-            Console.Write("Deskripsi Barang: ");
-            string deskripsi = Console.ReadLine();
-            Console.Write("Stok Barang: ");
-            if (!int.TryParse(Console.ReadLine(), out int stok))
-            {
-                Console.WriteLine("❌ ERROR: Stok harus berupa angka.");
-                break;
-            }
             try
             {
-                controller.TambahBarang(nama, deskripsi, stok);  // ⬅️ pake parameter stok
+                Console.Write("Nama Barang: ");
+                string nama = Console.ReadLine();
+                Console.Write("Deskripsi Barang: ");
+                string deskripsi = Console.ReadLine();
+                Console.Write("Stok Barang: ");
+                if (!int.TryParse(Console.ReadLine(), out int stok))
+                {
+                    Console.WriteLine("❌ ERROR: Stok harus berupa angka.");
+                    break;
+                }
+
+                var barang = new Barang
+                {
+                    Nama = nama,
+                    Deskripsi = deskripsi,
+                    Stok = stok
+                };
+
+                TokoValidator.ValidasiBarang(barang);  // Validasi disini, kalau gagal langsung throw
+
+                controller.TambahBarang(nama, deskripsi, stok);
             }
             catch (Exception ex)
             {

@@ -101,3 +101,4 @@ C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\TestTubes\obj\Debug\net8.0\ref
 C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\TestTubes\obj\Debug\net8.0\Mengelola_Toko.Tests.pdb
 C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\TestTubes\obj\Debug\net8.0\Mengelola_Toko.Tests.genruntimeconfig.cache
 C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\TestTubes\obj\Debug\net8.0\ref\Mengelola_Toko.Tests.dll
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\TestTubes\obj\Debug\net8.0\Mengelola_Toko.Tests.sourcelink.json

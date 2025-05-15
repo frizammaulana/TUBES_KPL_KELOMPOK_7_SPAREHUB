@@ -40,7 +40,10 @@ namespace Mengelola_Toko.Tests
                 Stok = -1
             };
 
-            Assert.Throws<ArgumentException>(() => service.TambahBarang(barang));
+            var ex = Record.Exception(() => service.TambahBarang(barang));
+
+            Assert.NotNull(ex);
+            Assert.Contains("Nama barang tidak boleh kosong", ex.Message);
         }
 
         [Fact]
