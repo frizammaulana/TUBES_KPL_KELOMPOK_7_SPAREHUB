@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TUBES_KPL_KELOMPOK_7.props" />
+</Project>
