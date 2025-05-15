@@ -52,12 +52,20 @@ public class Program
 
                 if (hasil != null && hasil.Count > 0)
                 {
-                    Console.WriteLine("\nHasil Pencarian:");
+                    Console.WriteLine("\nHasil Pencarian:\n");
+                    Console.WriteLine("{0,-25} | {1,-15} | {2,-15} | {3,-20} | {4,10}", "Nama", "Kategori", "Merek", "Kompatibel Dengan", "Harga");
+                    Console.WriteLine(new string('-', 95));
                     foreach (var item in hasil)
                     {
-                        Console.WriteLine($"{item.Nama} | {item.Kategori} | {item.Merek} | {item.KompatibelDengan} | Rp{item.Harga}");
+                        Console.WriteLine("{0,-25} | {1,-15} | {2,-15} | {3,-20} | Rp{4,8:N0}",
+                            item.Nama,
+                            item.Kategori,
+                            item.Merek,
+                            item.KompatibelDengan,
+                            item.Harga);
                     }
                 }
+
                 else
                 {
                     Console.WriteLine("Tidak ada hasil yang ditemukan.");
