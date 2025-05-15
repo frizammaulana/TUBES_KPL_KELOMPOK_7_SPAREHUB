@@ -1,0 +1,14 @@
+D:\KPL\Tubes\Tubes\bin\Debug\net8.0\Tubes.exe
+D:\KPL\Tubes\Tubes\bin\Debug\net8.0\Tubes.deps.json
+D:\KPL\Tubes\Tubes\bin\Debug\net8.0\Tubes.runtimeconfig.json
+D:\KPL\Tubes\Tubes\bin\Debug\net8.0\Tubes.dll
+D:\KPL\Tubes\Tubes\bin\Debug\net8.0\Tubes.pdb
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.GeneratedMSBuildEditorConfig.editorconfig
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.AssemblyInfoInputs.cache
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.AssemblyInfo.cs
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.csproj.CoreCompileInputs.cache
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.dll
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\refint\Tubes.dll
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.pdb
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\Tubes.genruntimeconfig.cache
+D:\KPL\Tubes\Tubes\obj\Debug\net8.0\ref\Tubes.dll
