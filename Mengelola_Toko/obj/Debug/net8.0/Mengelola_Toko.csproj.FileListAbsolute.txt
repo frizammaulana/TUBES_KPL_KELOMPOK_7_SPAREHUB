@@ -1,0 +1,15 @@
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\bin\Debug\net8.0\Mengelola_Toko.exe
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\bin\Debug\net8.0\Mengelola_Toko.deps.json
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\bin\Debug\net8.0\Mengelola_Toko.runtimeconfig.json
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\bin\Debug\net8.0\Mengelola_Toko.dll
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\bin\Debug\net8.0\Mengelola_Toko.pdb
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.AssemblyInfoInputs.cache
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.AssemblyInfo.cs
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.csproj.CoreCompileInputs.cache
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.dll
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\refint\Mengelola_Toko.dll
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.pdb
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.genruntimeconfig.cache
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\ref\Mengelola_Toko.dll
+C:\Users\naufa\OneDrive\Documents\SMT 4\KPL\Tubes\Mengelola_Toko\obj\Debug\net8.0\Mengelola_Toko.sourcelink.json
