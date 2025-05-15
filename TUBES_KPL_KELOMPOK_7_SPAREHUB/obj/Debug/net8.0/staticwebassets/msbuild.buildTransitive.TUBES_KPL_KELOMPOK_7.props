@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TUBES_KPL_KELOMPOK_7.props" />
-</Project>

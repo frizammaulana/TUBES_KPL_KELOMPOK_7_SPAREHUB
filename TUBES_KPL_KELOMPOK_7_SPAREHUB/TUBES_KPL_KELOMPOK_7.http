@@ -1,6 +1,0 @@
-@TUBES_KPL_KELOMPOK_7_HostAddress = http://localhost:5193
-
-GET {{TUBES_KPL_KELOMPOK_7_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
