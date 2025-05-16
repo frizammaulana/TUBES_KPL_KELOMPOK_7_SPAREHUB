@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,10 @@ namespace UlasanDanRatingProduk
             if (rating < 1 || rating > 5)
                 throw new ArgumentException("Rating harus antara 1–5");
 
+            Debug.Assert(!string.IsNullOrWhiteSpace(reviewer), "Reviewer wajib diisi");
+            Debug.Assert(!string.IsNullOrWhiteSpace(comment), "Komentar tidak boleh kosong");
+            Debug.Assert(rating >= 1 && rating <= 5, "Rating harus antara 1–5");
+
             Reviewer = reviewer;
             Comment = comment;
             Rating = rating;
@@ -32,6 +37,8 @@ namespace UlasanDanRatingProduk
         {
             if (State == ReviewState.Submitted)
                 throw new InvalidOperationException("Review sudah pernah dikirim");
+
+            Debug.Assert(State != ReviewState.Submitted, "Review seharusnya belum dikirim");
 
             State = ReviewState.Submitted;
             Console.WriteLine("Review berhasil dikirim.");

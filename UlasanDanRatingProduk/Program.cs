@@ -20,6 +20,7 @@ namespace UlasanDanRatingProduk
                 Console.WriteLine("1. Lihat produk");
                 Console.WriteLine("2. Tambah review produk");
                 Console.WriteLine("3. Lihat review produk");
+                Console.WriteLine("4. Kirim review draft");
                 Console.WriteLine("0. Keluar");
                 Console.Write("Pilih menu: ");
 
@@ -40,6 +41,9 @@ namespace UlasanDanRatingProduk
                         break;
                     case 3:
                         LihatReview();
+                        break;
+                    case 4:
+                        KirimReviewDraft();
                         break;
                     case 0:
                         Console.WriteLine("Terima kasih!");
@@ -83,29 +87,67 @@ namespace UlasanDanRatingProduk
                 return;
             }
 
-            Console.Write("Nama Anda: ");
-            string reviewer = Console.ReadLine()?.Trim();
-
-            Console.Write("Komentar: ");
-            string komentar = Console.ReadLine()?.Trim();
-
-            Console.Write("Rating (1-5): ");
-            if (!int.TryParse(Console.ReadLine(), out int rating))
-            {
-                Console.WriteLine("Rating tidak valid.");
-                return;
-            }
-
             try
             {
-                var review = new Review(reviewer, komentar, rating);
-                review.Submit();
-                reviewService.AddReview(id, review);
-                Console.WriteLine("Review berhasil ditambahkan.");
+                Console.Write("Nama Anda: ");
+                string reviewer = Console.ReadLine()?.Trim();
+
+                Console.Write("Komentar: ");
+                string komentar = Console.ReadLine()?.Trim();
+
+                Console.Write("Rating (1-5): ");
+                int rating = Convert.ToInt32(Console.ReadLine());
+
+                Review review;
+                try
+                {
+                    review = new Review(reviewer, komentar, rating);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Gagal membuat review: {ex.Message}");
+                    return;
+                }
+
+                Console.WriteLine("Apakah review ingin disubmit?");
+                Console.WriteLine("1. Submit");
+                Console.WriteLine("2. Simpan sebagai draft");
+                Console.Write("Pilih: ");
+
+                if (!int.TryParse(Console.ReadLine(), out int pilihanTambahReview))
+                {
+                    Console.WriteLine("Input tidak valid. Review tidak disimpan.");
+                    return;
+                }
+
+                switch (pilihanTambahReview)
+                {
+                    case 1:
+                        try
+                        {
+                            review.Submit();
+                            reviewService.AddReview(id, review);
+                            Console.WriteLine("Review berhasil ditambahkan.");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Gagal submit review: " + ex.Message);
+                        }
+                        break;
+
+                    case 2:
+                        reviewService.AddReview(id, review);
+                        Console.WriteLine("Review disimpan sebagai draft.");
+                        break;
+
+                    default:
+                        Console.WriteLine("Pilihan tidak dikenal. Review tidak disimpan.");
+                        break;
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Gagal menambahkan review: " + ex.Message);
+                Console.WriteLine("Gagal submit review: " + ex.Message);
             }
         }
 
@@ -123,6 +165,37 @@ namespace UlasanDanRatingProduk
 
             Console.WriteLine($"\nReview untuk produk: {produkList[id].Name}");
             reviewService.ShowReviews(id);
+        }
+
+        static void KirimReviewDraft()
+        {
+            TampilkanProduk();
+            Console.Write("\nMasukkan ID produk: ");
+            string id = Console.ReadLine()?.Trim().ToUpper();
+
+            if (!produkList.ContainsKey(id))
+            {
+                Console.WriteLine("Produk tidak ditemukan.");
+                return;
+            }
+
+            Console.WriteLine($"\nDaftar draft review untuk: {produkList[id].Name}");
+            reviewService.ShowDrafts(id);
+
+            Console.Write("\nPilih nomor draft yang ingin dikirim (0 untuk batal): ");
+            if (!int.TryParse(Console.ReadLine(), out int index) || index < 0)
+            {
+                Console.WriteLine("Input tidak valid.");
+                return;
+            }
+
+            if (index == 0)
+            {
+                Console.WriteLine("Pengiriman draft dibatalkan.");
+                return;
+            }
+
+            reviewService.SubmitDraft(id, index);
         }
     }
 }

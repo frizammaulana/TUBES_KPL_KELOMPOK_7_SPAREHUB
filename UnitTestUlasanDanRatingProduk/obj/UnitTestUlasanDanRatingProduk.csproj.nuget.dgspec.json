@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj": {}
+    "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj": {
+    "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj",
+        "projectUniqueName": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj",
         "projectName": "UlasanDanRatingProduk",
-        "projectPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj",
+        "projectPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj",
         "packagesPath": "C:\\Users\\RAFFA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UlasanDanRatingProduk\\obj\\",
+        "outputPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UlasanDanRatingProduk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj": {
+    "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj",
+        "projectUniqueName": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj",
         "projectName": "UnitTestUlasanDanRatingProduk",
-        "projectPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj",
+        "projectPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UnitTestUlasanDanRatingProduk\\UnitTestUlasanDanRatingProduk.csproj",
         "packagesPath": "C:\\Users\\RAFFA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UnitTestUlasanDanRatingProduk\\obj\\",
+        "outputPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UnitTestUlasanDanRatingProduk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj": {
-                "projectPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBES\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj"
+              "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj": {
+                "projectPath": "C:\\Users\\RAFFA\\Documents\\KULIAH\\SEMESTER4\\Konstruksi Perangkat Lunak\\TUBESfix\\TUBES_KPL_KELOMPOK_7_SPAREHUB\\UlasanDanRatingProduk\\UlasanDanRatingProduk.csproj"
               }
             }
           }

@@ -4,7 +4,7 @@ using Xunit;
 
 namespace UnitTestUlasanDanRatingProduk
 {
-    public class ReviewTests
+    public class UnitTest
     {
         [Fact]
         public void AddReview_ReviewTersimpanDalamMap()
@@ -73,5 +73,56 @@ namespace UnitTestUlasanDanRatingProduk
             Assert.Throws<ArgumentException>(() => new Product("", "Produk A"));
             Assert.Throws<ArgumentException>(() => new Product("P003", ""));
         }
+
+        [Fact]
+        public void ShowDrafts_MenampilkanHanyaReviewDraft()
+        {
+            var service = new ReviewService();
+            var productId = "P100";
+
+            var draftReview = new Review("Sari", "Masih ragu", 3);
+            var submittedReview = new Review("Rian", "Bagus banget", 5);
+
+            service.AddReview(productId, draftReview);
+            service.AddReview(productId, submittedReview);
+
+            var originalOut = Console.Out;
+            using (var sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                submittedReview.Submit();
+
+                service.ShowDrafts(productId);
+                var output = sw.ToString().Trim();
+
+                Assert.Contains("Draft oleh Sari: Masih ragu (3 bintang)", output);
+                Assert.DoesNotContain("Rian", output);
+            }
+            Console.SetOut(originalOut);
+        }
+
+        [Fact]
+        public void SubmitDraft_MengubahStateDanTampilDiShowReviews()
+        {
+            var service = new ReviewService();
+            var productId = "P101";
+
+            var draft = new Review("Tina", "Boleh dicoba", 4);
+            service.AddReview(productId, draft);
+
+            var originalOut = Console.Out;
+            using (var sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                service.SubmitDraft(productId, 1);
+
+                service.ShowReviews(productId);
+                var output = sw.ToString().Trim();
+
+                Assert.Contains("Bintang 4 oleh Tina: Boleh dicoba", output);
+            }
+            Console.SetOut(originalOut);
+        }
+
     }
 }
