@@ -16,7 +16,7 @@ public class Program
             Console.WriteLine("=== Sistem Pencarian Sparepart ===");
             Console.WriteLine("1. Cari berdasarkan Kategori");
             Console.WriteLine("2. Cari berdasarkan Merek");
-            Console.WriteLine("3. Cari berdasarkan Kompatibilitas");
+            Console.WriteLine("3. Cari berdasarkan Model");
             Console.WriteLine("0. Keluar");
             Console.Write("Pilihan Anda: ");
             string pilihan = Console.ReadLine();
@@ -53,8 +53,8 @@ public class Program
                 if (hasil != null && hasil.Count > 0)
                 {
                     Console.WriteLine("\nHasil Pencarian:\n");
-                    Console.WriteLine("{0,-25} | {1,-15} | {2,-15} | {3,-20} | {4,10}", "Nama", "Kategori", "Merek", "Kompatibel Dengan", "Harga");
-                    Console.WriteLine(new string('-', 95));
+                    Console.WriteLine("{0,-25} | {1,-15} | {2,-15} | {3,-20} | {4,10}", "Nama", "Kategori", "Merek", "Model", "Harga");
+                    Console.WriteLine(new string('-', 98));
                     foreach (var item in hasil)
                     {
                         Console.WriteLine("{0,-25} | {1,-15} | {2,-15} | {3,-20} | Rp{4,8:N0}",
@@ -76,7 +76,7 @@ public class Program
                 Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
             }
 
-            Console.WriteLine("\nTekan ENTER untuk melanjutkan...");
+            Console.WriteLine("\nTekan ENTER untuk melanjutkan");
             Console.ReadLine();
         }
     }
