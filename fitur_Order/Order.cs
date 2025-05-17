@@ -81,98 +81,120 @@ public class Order
     }
     public void AddToCart()
     {
-        List<CartItem> cart = LoadCart();
-        Console.Write("Masukkan nama produk: ");
-        string name = Console.ReadLine();
-
-        Console.Write("Masukkan jumlah: ");
-        int qty = int.Parse(Console.ReadLine());
-
-        Console.Write("Masukkan harga satuan: ");
-        int price = int.Parse(Console.ReadLine());
-
-        Debug.Assert(qty > 0, "Tidak boleh negatif");
-        Debug.Assert(price > 0, "Tidak boleh negatif");
-
-        CartItem newItem = new CartItem
+        try
         {
-            ProductId = Guid.NewGuid().ToString(),
-            ProductName = name,
-            Quantity = qty,
-            Price = price
-        };
+            List<CartItem> cart = LoadCart();
 
-        cart.Add(newItem);
+            Console.Write("Masukkan nama produk: ");
+            string name = Console.ReadLine();
 
-        string json = JsonSerializer.Serialize(cart, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(CartFile, json);
+            Console.Write("Masukkan jumlah: ");
+            if (!int.TryParse(Console.ReadLine(), out int qty))
+                throw new ArgumentException("Jumlah harus berupa angka.");
 
-        Console.WriteLine("Produk berhasil ditambahkan ke keranjang.");
+            Console.Write("Masukkan harga satuan: ");
+            if (!int.TryParse(Console.ReadLine(), out int price))
+                throw new ArgumentException("Harga harus berupa angka.");
 
+            // Debug assertions
+            Debug.Assert(qty > 0, "Jumlah harus lebih dari 0");
+            Debug.Assert(price > 0, "Harga harus lebih dari 0");
+
+            if (qty <= 0 || price <= 0)
+                throw new ArgumentOutOfRangeException("Jumlah dan harga harus lebih dari 0.");
+
+            CartItem newItem = new CartItem
+            {
+                ProductId = Guid.NewGuid().ToString(),
+                ProductName = name,
+                Quantity = qty,
+                Price = price
+            };
+
+            cart.Add(newItem);
+
+            string json = JsonSerializer.Serialize(cart, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(CartFile, json);
+
+            Console.WriteLine("Produk berhasil ditambahkan ke keranjang.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Terjadi kesalahan saat menambahkan ke keranjang: {ex.Message}");
+            Console.WriteLine("Data tidak ditambahkan.");
+        }
     }
+
 
     public void ProcessOrder()
     {
-        List<CartItem> cart = LoadCart();
-
-        if (cart.Count == 0)
+        try
         {
-            Console.WriteLine("Keranjang kosong. Tidak ada pesanan yang dapat diproses.");
-            return;
+            List<CartItem> cart = LoadCart();
+
+            if (cart.Count == 0)
+            {
+                Console.WriteLine("Keranjang kosong. Tidak ada pesanan yang dapat diproses.");
+                return;
+            }
+
+            Console.WriteLine("=== DAFTAR PRODUK DI KERANJANG ===");
+            int total = 0;
+
+            foreach (var item in cart)
+            {
+                Debug.Assert(item.Quantity > 0, "Jumlah produk harus positif.");
+                Debug.Assert(item.Price > 0, "Harga produk tidak boleh nol.");
+
+                if (item.Quantity <= 0 || item.Price <= 0)
+                    throw new InvalidDataException($"Data produk '{item.ProductName}' tidak valid (qty: {item.Quantity}, price: {item.Price}).");
+
+                int subtotal = item.Quantity * item.Price;
+                total += subtotal;
+
+                Console.WriteLine($"- {item.ProductName} x{item.Quantity} @ Rp{item.Price:N0} = Rp{subtotal:N0}");
+            }
+
+            Console.WriteLine("\nPilih metode pembayaran:");
+            for (int i = 0; i < validPayments.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {validPayments[i]}");
+            }
+
+            Console.Write("Masukkan nomor metode pembayaran yang dipilih: ");
+            if (!int.TryParse(Console.ReadLine(), out int choice) || choice < 1 || choice > validPayments.Count)
+                throw new ArgumentOutOfRangeException("Pilihan metode pembayaran tidak valid.");
+
+            string selectedPayment = validPayments[choice - 1];
+            config["payment_method"] = selectedPayment;
+
+            Console.WriteLine($"\nMetode Pembayaran: {selectedPayment}");
+            Console.WriteLine($"Pengiriman via: {config["shipping"]}");
+            Console.WriteLine($"TOTAL: Rp{total:N0}");
+
+            Console.Write("Lanjutkan pemesanan? (y/n): ");
+            string confirm = Console.ReadLine();
+
+            if (confirm.ToLower() == "y")
+            {
+                Console.WriteLine("\nPesanan sedang diproses...");
+                string status = statusMap.ContainsKey("1") ? statusMap["1"] : "Unknown";
+
+                Console.WriteLine($"Status pesanan: {status}");
+
+                File.WriteAllText(CartFile, "[]");
+                Console.WriteLine("Keranjang dikosongkan.");
+            }
+            else
+            {
+                Console.WriteLine("Pemesanan dibatalkan.");
+            }
         }
-
-        Console.WriteLine("=== DAFTAR PRODUK DI KERANJANG ===");
-        int total = 0;
-        foreach (var item in cart)
+        catch (Exception ex)
         {
-            Debug.Assert(item.Quantity > 0, "Jumlah produk harus positif.");
-            Debug.Assert(item.Price > 0, "Harga produk tidak boleh nol.");
-
-            int subtotal = item.Quantity * item.Price;
-            total += subtotal;
-
-            Console.WriteLine($"- {item.ProductName} x{item.Quantity} @ Rp{item.Price:N0} → Rp{subtotal:N0}");
-        }
-
-        // Tampilkan metode pembayaran yang tersedia
-        Console.WriteLine("\nPilih metode pembayaran:");
-        for (int i = 0; i < validPayments.Count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {validPayments[i]}");
-        }
-
-        Console.Write("Masukkan nomor metode pembayaran yang dipilih: ");
-        string choiceInput = Console.ReadLine();
-        int choice;
-        if (!int.TryParse(choiceInput, out choice) || choice < 1 || choice > validPayments.Count)
-        {
-            Console.WriteLine("Pilihan tidak valid.");
-            return;
-        }
-
-        string selectedPayment = validPayments[choice - 1];
-        config["payment_method"] = selectedPayment; // update config runtime
-
-        Console.WriteLine($"\nMetode Pembayaran: {selectedPayment}");
-        Console.WriteLine($"Pengiriman via: {config["shipping"]}");
-        Console.WriteLine($"TOTAL: Rp{total:N0}");
-
-        Console.Write("Lanjutkan pemesanan? (y/n): ");
-        string confirm = Console.ReadLine();
-
-        if (confirm.ToLower() == "y")
-        {
-            Console.WriteLine("\nPesanan sedang diproses...");
-            string status = statusMap.ContainsKey("1") ? statusMap["1"] : "Unknown";
-
-            Console.WriteLine($"Status pesanan: {status}");
-
-            File.WriteAllText(CartFile, "[]");
-            Console.WriteLine("Keranjang dikosongkan.");
-        }
-        else
-        {
-            Console.WriteLine("Pemesanan dibatalkan.");
+            Console.WriteLine($"Terjadi kesalahan saat memproses pesanan: {ex.Message}");
+            Console.WriteLine("Pesanan dibatalkan.");
         }
     }
+
 }
