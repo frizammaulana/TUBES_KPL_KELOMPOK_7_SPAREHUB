@@ -18,7 +18,6 @@ namespace Mengelola_Toko.Services
 
         // API — Representasi endpoint: POST /barang
         // Code reuse/library — Pakai helper untuk validasi
-        // DbC — Validasi input sebelum ditambah
         public void TambahBarang(Barang barang)
         {
             TokoValidator.ValidasiBarang(barang); // Reuse validator untuk cek input
@@ -31,7 +30,6 @@ namespace Mengelola_Toko.Services
         public List<Barang> GetSemuaBarang() => daftarBarang;
 
         // API — Representasi endpoint: PUT /barang/{id}
-        // DbC — Validasi bahwa ID harus ada & deskripsi valid
         public void UbahDeskripsi(string id, string deskripsiBaru)
         {
             var barang = daftarBarang.FirstOrDefault(b => b.Id == id);
@@ -39,29 +37,27 @@ namespace Mengelola_Toko.Services
                 throw new Exception("Barang tidak ditemukan."); // DbC — kontrak: barang harus ada
 
             if (string.IsNullOrWhiteSpace(deskripsiBaru))
-                throw new ArgumentException("Deskripsi tidak boleh kosong."); // DbC — kontrak: input valid
+                throw new ArgumentException("Deskripsi tidak boleh kosong."); 
 
             barang.Deskripsi = deskripsiBaru;
         }
 
         // API — Representasi endpoint: DELETE /barang/{id}
-        // DbC — Pastikan barang ada sebelum hapus
         public void HapusBarang(string id)
         {
             var barang = daftarBarang.FirstOrDefault(b => b.Id == id);
             if (barang == null)
-                throw new Exception("Barang tidak ditemukan."); // DbC
+                throw new Exception("Barang tidak ditemukan."); 
 
             daftarBarang.Remove(barang);
         }
 
         // API — Representasi endpoint: GET /barang/{id}/stok
-        // DbC — Validasi bahwa barang harus ada
         public int LihatStok(string id)
         {
             var barang = daftarBarang.FirstOrDefault(b => b.Id == id);
             if (barang == null)
-                throw new Exception("Barang tidak ditemukan."); // DbC
+                throw new Exception("Barang tidak ditemukan.");
 
             return barang.Stok;
         }

@@ -9,12 +9,12 @@ var controller = new TokoController();
 
 while (true)
 {
-    Console.WriteLine("\n=== MENU MANAJEMEN BARANG ===");
+    Console.WriteLine("\n=== MENU Mengelola Toko ===");
     Console.WriteLine("1. Tambah Barang");
     Console.WriteLine("2. Lihat Semua Barang");
     Console.WriteLine("3. Ubah Deskripsi Barang");
     Console.WriteLine("4. Hapus Barang");
-    Console.WriteLine("5. Lihat Stok Barang");  // ⬅️ Tambahan menu stok
+    Console.WriteLine("5. Lihat Stok Barang");
     Console.WriteLine("0. Keluar");
     Console.Write("Pilih menu: ");
     var input = Console.ReadLine();
@@ -24,16 +24,17 @@ while (true)
         case "1":
             try
             {
-                Console.Write("Nama Barang: ");
+                Console.Write("Masukkan nama barang: ");
                 string nama = Console.ReadLine();
-                Console.Write("Deskripsi Barang: ");
+
+                Console.Write("Masukkan deskripsi: ");
                 string deskripsi = Console.ReadLine();
-                Console.Write("Stok Barang: ");
-                if (!int.TryParse(Console.ReadLine(), out int stok))
-                {
-                    Console.WriteLine("❌ ERROR: Stok harus berupa angka.");
-                    break;
-                }
+
+                Console.Write("Masukkan stok: ");
+                int stok = int.Parse(Console.ReadLine());
+
+                Console.Write("Masukkan harga: ");
+                int harga = int.Parse(Console.ReadLine());
 
                 var barang = new Barang
                 {
@@ -44,11 +45,11 @@ while (true)
 
                 TokoValidator.ValidasiBarang(barang);  // Validasi disini, kalau gagal langsung throw
 
-                controller.TambahBarang(nama, deskripsi, stok);
+                controller.TambahBarang(nama, deskripsi, stok, harga);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERROR: {ex.Message}");
+                Console.WriteLine($"ERROR: {ex.Message}");
             }
             break;
 
@@ -67,7 +68,7 @@ while (true)
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERROR: {ex.Message}");
+                Console.WriteLine($"ERROR: {ex.Message}");
             }
             break;
 
@@ -80,11 +81,11 @@ while (true)
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERROR: {ex.Message}");
+                Console.WriteLine($"ERROR: {ex.Message}");
             }
             break;
 
-        case "5":   // ⬅️ menu liat stok
+        case "5":  
             Console.Write("ID Barang: ");
             string idStok = Console.ReadLine();
             try
@@ -94,7 +95,7 @@ while (true)
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERROR: {ex.Message}");
+                Console.WriteLine($"ERROR: {ex.Message}");
             }
             break;
 

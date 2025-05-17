@@ -16,14 +16,15 @@ namespace Mengelola_Toko.Controllers
         private readonly TokoServices service = new();  // <- service dipanggil, kayak akses API endpoint di backend
 
         // API : TambahBarang acting sebagai POST /barang
-        public void TambahBarang(string nama, string deskripsi, int stok)
+        public void TambahBarang(string nama, string deskripsi, int stok, int harga)
         {
             // Code Reuse: class Barang dipake berkali-kali buat bikin objek
             var barang = new Barang
             {
                 Nama = nama,
                 Deskripsi = deskripsi,
-                Stok = stok
+                Stok = stok,
+                Harga = harga
             };
 
             // API : panggil 'endpoint' TambahBarang di Service
@@ -44,7 +45,7 @@ namespace Mengelola_Toko.Controllers
             }
 
             foreach (var b in semua)
-                Console.WriteLine($"ID: {b.Id} | {b.Nama} - {b.Deskripsi} | Stok: {b.Stok}");
+                Console.WriteLine($"ID: {b.Id} | {b.Nama} - {b.Deskripsi} | Rp.{b.Harga}.00");
         }
 
         // API : PUT /barang/{id}

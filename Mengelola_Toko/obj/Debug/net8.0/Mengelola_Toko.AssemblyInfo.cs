@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mengelola_Toko")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9c48b8a74c8d2b7ff46955de34b751550a2b5fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+799ffe73f6c540b3ba3d8019a99afee8bb3e148d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mengelola_Toko")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mengelola_Toko")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

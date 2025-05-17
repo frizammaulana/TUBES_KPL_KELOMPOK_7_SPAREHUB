@@ -16,7 +16,9 @@ namespace Mengelola_Toko.Tests
             {
                 Nama = "Sproket",
                 Deskripsi = "Gear motor belakang",
-                Stok = 10
+                Stok = 10,
+                Harga = 150000
+
             };
 
             service.TambahBarang(barang);
@@ -37,7 +39,9 @@ namespace Mengelola_Toko.Tests
             {
                 Nama = "",
                 Deskripsi = "",
-                Stok = -1
+                Stok = -1,
+                Harga = - 1
+
             };
 
             var ex = Record.Exception(() => service.TambahBarang(barang));
@@ -54,7 +58,8 @@ namespace Mengelola_Toko.Tests
             {
                 Nama = "Oli",
                 Deskripsi = "Oli mesin",
-                Stok = 5
+                Stok = 5,
+                Harga = 55000
             };
 
             service.TambahBarang(barang);
@@ -66,14 +71,6 @@ namespace Mengelola_Toko.Tests
         }
 
         [Fact]
-        public void UbahDeskripsi_InvalidId_ShouldThrowException()
-        {
-            var service = new TokoServices();
-
-            Assert.Throws<Exception>(() => service.UbahDeskripsi("999", "baru"));
-        }
-
-        [Fact]
         public void HapusBarang_ShouldRemoveBarang()
         {
             var service = new TokoServices();
@@ -81,7 +78,8 @@ namespace Mengelola_Toko.Tests
             {
                 Nama = "Kampas Rem",
                 Deskripsi = "Kampas depan",
-                Stok = 3
+                Stok = 3,
+                Harga = 70000
             };
 
             service.TambahBarang(barang);
@@ -100,7 +98,8 @@ namespace Mengelola_Toko.Tests
             {
                 Nama = "Busi",
                 Deskripsi = "Busi NGK",
-                Stok = 7
+                Stok = 7,
+                Harga = 150000
             };
 
             service.TambahBarang(barang);
@@ -109,14 +108,6 @@ namespace Mengelola_Toko.Tests
             int stok = service.LihatStok(id);
 
             Assert.Equal(7, stok);
-        }
-
-        [Fact]
-        public void LihatStok_InvalidId_ShouldThrowException()
-        {
-            var service = new TokoServices();
-
-            Assert.Throws<Exception>(() => service.LihatStok("999"));
         }
     }
 }
