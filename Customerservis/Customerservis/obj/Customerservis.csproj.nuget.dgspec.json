@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KPL\\Customerservis\\Customerservis\\Customerservis.csproj": {}
+    "D:\\KPL\\kosong ygy\\Customerservis\\Customerservis\\Customerservis.csproj": {}
   },
   "projects": {
-    "D:\\KPL\\Customerservis\\Customerservis\\Customerservis.csproj": {
+    "D:\\KPL\\kosong ygy\\Customerservis\\Customerservis\\Customerservis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KPL\\Customerservis\\Customerservis\\Customerservis.csproj",
+        "projectUniqueName": "D:\\KPL\\kosong ygy\\Customerservis\\Customerservis\\Customerservis.csproj",
         "projectName": "Customerservis",
-        "projectPath": "D:\\KPL\\Customerservis\\Customerservis\\Customerservis.csproj",
+        "projectPath": "D:\\KPL\\kosong ygy\\Customerservis\\Customerservis\\Customerservis.csproj",
         "packagesPath": "C:\\Users\\L E N O V O\\.nuget\\packages\\",
-        "outputPath": "D:\\KPL\\Customerservis\\Customerservis\\obj\\",
+        "outputPath": "D:\\KPL\\kosong ygy\\Customerservis\\Customerservis\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
