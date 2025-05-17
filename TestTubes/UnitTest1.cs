@@ -28,6 +28,7 @@ namespace Mengelola_Toko.Tests
             Assert.Equal("Sproket", semua[0].Nama);
             Assert.Equal("Gear motor belakang", semua[0].Deskripsi);
             Assert.Equal(10, semua[0].Stok);
+            Assert.Equal(150000, semua[0].Harga);
         }
 
         [Fact]

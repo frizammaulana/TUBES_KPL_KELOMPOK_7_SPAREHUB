@@ -17,7 +17,7 @@ namespace Mengelola_Toko.Services
         private int idCounter = 1;
 
         // API — Representasi endpoint: POST /barang
-        // Code reuse/library — Pakai helper untuk validasi
+        // Code reuse/library — Pakai Valdisa untuk validasi
         public void TambahBarang(Barang barang)
         {
             TokoValidator.ValidasiBarang(barang); // Reuse validator untuk cek input
@@ -34,7 +34,7 @@ namespace Mengelola_Toko.Services
         {
             var barang = daftarBarang.FirstOrDefault(b => b.Id == id);
             if (barang == null)
-                throw new Exception("Barang tidak ditemukan."); // DbC — kontrak: barang harus ada
+                throw new Exception("Barang tidak ditemukan.");
 
             if (string.IsNullOrWhiteSpace(deskripsiBaru))
                 throw new ArgumentException("Deskripsi tidak boleh kosong."); 

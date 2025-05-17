@@ -11,10 +11,7 @@ namespace Mengelola_Toko.Helpers
     class TokoValidator
     {
         public static void ValidasiBarang(Barang barang)
-        {
-           
-
-            
+        { 
             Debug.Assert(!string.IsNullOrWhiteSpace(barang.Nama), "Nama barang tidak boleh kosong.");
             if (string.IsNullOrWhiteSpace(barang.Nama))
                 throw new ArgumentException("Nama barang tidak boleh kosong.");
@@ -30,7 +27,6 @@ namespace Mengelola_Toko.Helpers
             Debug.Assert(barang.Harga >= 0, "Harga tidak boleh negatif.");
             if (barang.Harga < 0)
                 throw new ArgumentException("Harga tidak boleh negatif.");
-
         }
     }
 }

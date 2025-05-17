@@ -3,27 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\services\\tokoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:services\\tokoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\controllers\\tokocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:controllers\\tokocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\helpers\\tokovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:helpers\\tokovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\models\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:models\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\services\\tokoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:services\\tokoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\validasi\\tokovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:validasi\\tokovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{220E6AE0-0469-4475-848E-68E869F41BD7}|..\\TestTubes\\Mengelola_Toko.Tests.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\testtubes\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|c:\\users\\naufa\\onedrive\\documents\\smt 4\\kpl\\tubes\\mengelola_toko\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1EDE0F1-1358-4E8B-B7A4-08AFC341BB9A}|Mengelola_Toko.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Helpers\\TokoValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Helpers\\TokoValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,6 +46,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "TokoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Validasi\\TokoValidator.cs",
+              "RelativeDocumentMoniker": "Validasi\\TokoValidator.cs",
+              "ToolTip": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Validasi\\TokoValidator.cs",
+              "RelativeToolTip": "Validasi\\TokoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T09:31:54.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -49,38 +65,35 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T13:38:08.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T13:38:08.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\TestTubes\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\TestTubes\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\TestTubes\\UnitTest1.cs",
               "RelativeToolTip": "..\\TestTubes\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T10:55:53.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T10:55:53.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TokoServices.cs",
               "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Services\\TokoServices.cs",
               "RelativeDocumentMoniker": "Services\\TokoServices.cs",
               "ToolTip": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Services\\TokoServices.cs",
               "RelativeToolTip": "Services\\TokoServices.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA3wCcAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T09:10:40.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T09:10:40.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Barang.cs",
               "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Models\\Barang.cs",
               "RelativeDocumentMoniker": "Models\\Barang.cs",
@@ -88,12 +101,11 @@
               "RelativeToolTip": "Models\\Barang.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T09:10:05.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T09:10:05.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "TokoValidator.cs",
               "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Helpers\\TokoValidator.cs",
               "RelativeDocumentMoniker": "Helpers\\TokoValidator.cs",
@@ -101,18 +113,17 @@
               "RelativeToolTip": "Helpers\\TokoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T09:08:49.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T09:08:49.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TokoController.cs",
               "DocumentMoniker": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Controllers\\TokoController.cs",
               "RelativeDocumentMoniker": "Controllers\\TokoController.cs",
               "ToolTip": "C:\\Users\\naufa\\OneDrive\\Documents\\SMT 4\\KPL\\Tubes\\Mengelola_Toko\\Controllers\\TokoController.cs",
               "RelativeToolTip": "Controllers\\TokoController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAA1wC8AAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T09:08:26.936Z",
               "EditorCaption": ""
